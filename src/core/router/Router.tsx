@@ -11,6 +11,10 @@ const router = createBrowserRouter([
         path: "",
         element: <TaskScreen />,
       },
+      {
+        path: "/tasks/create",
+        element: <TaskScreen />,
+      },
     ],
   },
 ]);
