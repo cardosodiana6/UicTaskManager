@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 function TaskLayout() {
   return (
-    <main className="min-h-screen">
+    <main className="container mx-auto p-4">
       <Outlet />
     </main>
   );
