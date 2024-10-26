@@ -1,22 +1,28 @@
+import { Button } from "@/components/ui/button";
 import TaskCard from "../../components/TaskCard";
-import { type Task, Priority } from "../../types/task.interface";
+import { type Task, Priority, Status } from "../../types/task";
+import TaskFormContainer from "../../components/TaskForm/TaskFormContainer";
+import { useState } from "react";
 
 const tasks: Task[] = [
   {
     id: "1",
     title: "title",
     description: "description",
-    date_end: new Date(),
-    priority: Priority.low,
+    expirationDate: new Date(),
+    priority: Priority.Low,
+    status: Status.Todo,
   },
   {
     id: "2",
     title: "title2",
     description: "description2",
-    date_end: new Date(),
-    priority: Priority.normal,
+    expirationDate: new Date(),
+    priority: Priority.Medium,
+    status: Status.InProgress,
   },
 ];
+
 function TaskScreen() {
   return (
     <div className="flex flex-col gap-3">
