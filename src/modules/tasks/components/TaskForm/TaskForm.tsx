@@ -26,7 +26,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-import { Priority, Status } from "../../types/task";
 const TaskForm: React.FC = () => {
   const form = useFormContext();
   return (
@@ -117,11 +116,11 @@ const TaskForm: React.FC = () => {
                 </SelectTrigger>
               </FormControl>
               <SelectContent>
-                <SelectItem value={Priority.Low}>{Priority.Low}</SelectItem>
-                <SelectItem value={Priority.Medium}>
-                  {Priority.Medium}
+                <SelectItem value={"Low"}>{"Low"}</SelectItem>
+                <SelectItem value={"Medium"}>
+                  {"Medium"}
                 </SelectItem>
-                <SelectItem value={Priority.High}>{Priority.High}</SelectItem>
+                <SelectItem value={"High"}>{"High"}</SelectItem>
               </SelectContent>
             </Select>
             <FormMessage />
@@ -145,11 +144,11 @@ const TaskForm: React.FC = () => {
                 </SelectTrigger>
               </FormControl>
               <SelectContent>
-                <SelectItem value={Status.Todo}>{Status.Todo}</SelectItem>
-                <SelectItem value={Status.InProgress}>
-                  {Status.InProgress}
+                <SelectItem value={"Todo"}>{"Todo"}</SelectItem>
+                <SelectItem value={"InProgress"}>
+                  {"InProgress"}
                 </SelectItem>
-                <SelectItem value={Status.Done}>{Status.Done}</SelectItem>
+                <SelectItem value={"Done"}>{"Done"}</SelectItem>
               </SelectContent>
             </Select>
             <FormMessage />

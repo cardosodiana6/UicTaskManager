@@ -1,6 +1,6 @@
+import TaskLayout from "@/modules/tasks/containers/hocs/layout/TaskLayout";
 import { createBrowserRouter } from "react-router-dom";
-import { TaskLayout } from "./LazyComponent";
-import TaskScreen from "../../modules/tasks/containers/pages/TaskScreen";
+import { DashboardContainer } from "./LazyComponent";
 
 const router = createBrowserRouter([
   {
@@ -8,8 +8,8 @@ const router = createBrowserRouter([
     element: <TaskLayout />,
     children: [
       {
-        path: "",
-        element: <TaskScreen />,
+        path: "/",
+        element: <DashboardContainer />,
       },
     ],
   },

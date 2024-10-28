@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import { useForm } from "react-hook-form";
 import { formSchema } from "./schema";
-import { Priority, Status, Task } from "../../types/task";
+import {  Task } from "../../types/task";
 import { zodResolver } from "@hookform/resolvers/zod";
 import TaskForm from "./TaskForm";
 import { Form } from "@/components/ui/form";
@@ -31,8 +31,8 @@ const TaskFormContainer: React.FC<Props> = ({
       title: "",
       description: "",
       expirationDate: new Date(),
-      priority: Priority.Medium,
-      status: Status.Todo,
+      priority: "Medium",
+      status: "Todo",
     },
   });
   function onSubmit(value: Task) {

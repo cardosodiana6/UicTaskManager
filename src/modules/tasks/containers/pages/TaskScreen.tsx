@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import TaskCard from "../../components/TaskCard";
-import { type Task, Priority, Status } from "../../types/task";
+import { type Task } from "../../types/task";
 import TaskFormContainer from "../../components/TaskForm/TaskFormContainer";
 import { useState } from "react";
 
@@ -10,16 +10,16 @@ const tasks: Task[] = [
     title: "title",
     description: "description",
     expirationDate: new Date(),
-    priority: Priority.Low,
-    status: Status.Todo,
+    priority: "Low",
+    status: "Todo",
   },
   {
     id: "2",
     title: "title2",
     description: "description2",
     expirationDate: new Date(),
-    priority: Priority.Medium,
-    status: Status.InProgress,
+    priority: "Medium",
+    status: "InProgress",
   },
 ];
 

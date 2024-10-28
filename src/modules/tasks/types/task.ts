@@ -3,18 +3,6 @@ export type Task = {
   title: string;
   description: string;
   expirationDate: Date;
-  priority: Priority;
-  status: Status;
+  priority: "Low" | "Medium" | "High";
+  status: "Todo" | "InProgress" | "Done";
 };
-
-export enum Priority {
-  Low = "Low",
-  Medium = "Medium",
-  High = "High",
-}
-
-export enum Status {
-  Todo = "Todo",
-  InProgress = "InProgress",
-  Done = "Done",
-}
